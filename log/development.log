@@ -1,0 +1,482 @@
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20180310235343)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180310235343"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-10 23:56:20.059702"], ["updated_at", "2018-03-10 23:56:20.059702"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20180311000117)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20180311000117)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20180311001250)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180311001250"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-11 00:13:24.722196"], ["updated_at", "2018-03-11 00:13:24.722196"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["email", "test@kmail.com"], ["password", "aaaaa"], ["created_at", "2018-03-11 00:18:38.830941"], ["updated_at", "2018-03-11 00:18:38.830941"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "test"], ["LIMIT", 1]]
+Started OPTIONS "/api/user/signin" for 127.0.0.1 at 2018-03-11 11:58:18 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 12:37:03 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 12:40:53 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 12:42:32 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 12:43:26 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 12:45:39 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 12:45:44 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 12:47:46 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 12:48:56 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:03:45 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:05:45 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:06:47 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:06:57 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:08:14 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dfghj"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:08:42 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:09:16 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vbn"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:19:15 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+  
+NameError (uninitialized constant API::Entities):
+  
+app/api/api.rb:12:in `block (2 levels) in <class:API>'
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:19:44 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+  
+NameError (uninitialized constant API::UserEntity):
+  
+app/api/api.rb:12:in `block (2 levels) in <class:API>'
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:20:10 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+  
+NameError (uninitialized constant Grape::Entity):
+  
+app/entities/user_entity.rb:1:in `<top (required)>'
+app/api/api.rb:12:in `block (2 levels) in <class:API>'
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:21:49 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:22:21 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:22:37 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:23:34 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:23:45 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:25:52 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:26:23 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:26:58 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:27:07 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:27:11 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:27:40 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:28:34 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:29:48 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:30:24 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:31:03 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:35:35 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:36:01 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:36:45 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:38:26 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:39:47 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:40:43 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:41:35 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:42:34 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:45:37 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:46:22 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:46:26 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:47:22 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:47:29 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:48:08 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:48:10 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:48:12 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:49:58 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:50:02 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:52:14 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:58:17 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:58:20 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:59:37 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 13:59:41 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:00:02 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:00:05 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:00:43 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:01:02 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:02:32 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:03:24 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:03:34 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:07:04 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:10:19 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:10:25 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:10:52 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:11:05 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:13:28 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:14:23 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:14:27 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:15:07 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:15:11 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:18:23 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:22:14 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:22:16 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:23:00 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:23:01 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:23:02 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:23:40 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:23:48 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:24:50 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:25:09 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:25:55 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:26:33 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:38:41 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:39:56 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:43:32 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:44:13 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:44:14 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:44:15 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:45:06 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:47:58 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:49:13 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:49:22 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:49:24 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:49:25 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:50:42 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:51:36 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:54:20 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:54:52 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:58:51 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:59:39 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:59:40 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:59:40 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 14:59:40 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:00:26 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:00:47 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:03:43 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:03:48 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:05:46 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:06:20 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:09:34 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:09:37 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:13:55 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:14:10 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:14:11 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:14:12 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:18:59 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:19:02 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:19:19 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:22:32 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:22:34 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:23:00 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:23:02 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:23:04 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:23:19 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:24:16 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:24:46 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:24:47 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:24:48 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:24:48 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:26:35 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:26:36 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:26:55 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:26:56 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:27:36 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:34:28 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:34:44 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:34:56 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:34:56 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:34:57 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:34:57 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:34:57 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:35:02 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:35:03 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:35:03 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:35:03 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:35:03 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:35:04 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:35:34 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:37:54 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:37:56 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:37:58 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:38:15 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:39:48 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:39:49 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:40:24 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:41:14 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:41:44 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:43:21 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:43:50 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:45:22 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", "fg"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:45:57 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fghjk"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fghjk"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:52:21 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:52:50 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:53:14 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:53:24 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:53:24 +0900
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:53:24 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:53:24 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:54:39 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:56:17 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:56:45 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:56:48 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:57:01 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:57:28 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:59:02 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 15:59:22 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:14:47 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:15:02 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:16:41 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:19:12 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:21:04 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:21:54 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:22:29 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "AAAAA"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:22:30 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "AAAAA"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:22:34 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:24:09 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:25:04 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:26:12 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com:"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:26:19 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:27:25 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com:"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:27:30 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:28:08 +0900
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/api/api.rb:10:in `[]'
+app/api/api.rb:10:in `block (2 levels) in <class:API>'
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:28:09 +0900
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/api/api.rb:10:in `[]'
+app/api/api.rb:10:in `block (2 levels) in <class:API>'
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:28:09 +0900
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/api/api.rb:10:in `[]'
+app/api/api.rb:10:in `block (2 levels) in <class:API>'
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:28:21 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:28:23 +0900
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/api/api.rb:10:in `[]'
+app/api/api.rb:10:in `block (2 levels) in <class:API>'
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:29:22 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-11 16:29:27 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-12 13:04:36 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-12 13:06:54 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
+Started POST "/api/user/signin" for 127.0.0.1 at 2018-03-12 13:07:28 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@kmail.com"], ["password", "aaaaa"], ["LIMIT", 1]]
