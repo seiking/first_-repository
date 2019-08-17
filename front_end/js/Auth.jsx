@@ -13,6 +13,7 @@ class Auth extends React.Component{
     this.roulet = this.roulet.bind(this)//stateの値を変える時にbindが必要
     this.playerNameSubmit = this.playerNameSubmit.bind(this)
     this.playerCount = this.playerCount.bind(this)
+
   }
   roulet(e){
     e.preventDefault()
@@ -46,7 +47,6 @@ class Auth extends React.Component{
     }
   }
   render(){
-          console.log(this.state.player_lists)
     return(
       <div>
         <p>{this.state.randnum}</p>
@@ -68,6 +68,7 @@ class Auth extends React.Component{
           <input type="submit" value="決定"/>
         </form>
       </div>
+
     )
   }
 }
