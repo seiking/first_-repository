@@ -9,6 +9,7 @@ class Auth extends React.Component{
     this.state = {
       randnum: 0,
       player_lists: [{name: '', position_number: 0}], //[{player1},{player2},..,{player10}]の形で入れる。
+      player_form: true
     }
     this.roulet = this.roulet.bind(this)//stateの値を変える時にbindが必要
     this.playerNameSubmit = this.playerNameSubmit.bind(this)
@@ -35,6 +36,7 @@ class Auth extends React.Component{
     var numOfPeople = Number(document.getElementById("playerCount").value)
     var result = window.confirm(`${numOfPeople}人で始めますか？`)
     if(result) {
+      console.log("ok")
       var player_lists_new = []
       for (var i = 0; i < numOfPeople; i++) {
         player_lists_new.push({name: '', position_number: 0})
@@ -43,6 +45,7 @@ class Auth extends React.Component{
       this.setState({ player_lists: player_lists_new })
       console.log("start!!!!!!!!!!!!!!!")
     } else {
+      console.log("cansel")
       location.reload()
     }
   }
@@ -53,6 +56,7 @@ class Auth extends React.Component{
         <input type="button" value="サイコロ" onClick={this.roulet}/>
         <p>名前/位置</p>
         <p>{`${this.state.player_lists[0].name}/${this.state.player_lists[0].position_number}`}</p>
+        {this.state.player_form ? <h1>aaa</h1>:null}
         <form onSubmit={this.playerNameSubmit}>
           <pre><input type ="text" id="playername" name="playername" placeholder="君の名前を教えて"/></pre>
           <input type="submit" value="決定"/>
