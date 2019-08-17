@@ -12,6 +12,7 @@ class Auth extends React.Component{
     }
     this.roulet = this.roulet.bind(this)//stateの値を変える時にbindが必要
     this.playerNameSubmit = this.playerNameSubmit.bind(this)
+    this.playerCount = this.playerCount.bind(this)
   }
   roulet(e){
     e.preventDefault()
@@ -28,7 +29,24 @@ class Auth extends React.Component{
     player_lists_new[0].name = document.getElementById("playername").value
     this.setState({ player_lists: player_lists_new })
   }
+  playerCount(e){
+    e.preventDefault()
+    var numOfPeople = Number(document.getElementById("playerCount").value)
+    var result = window.confirm(`${numOfPeople}人で始めますか？`)
+    if(result) {
+      var player_lists_new = []
+      for (var i = 0; i < numOfPeople; i++) {
+        player_lists_new.push({name: '', position_number: 0})
+      }
+      // console.log(player_lists_new)
+      this.setState({ player_lists: player_lists_new })
+      console.log("start!!!!!!!!!!!!!!!")
+    } else {
+      location.reload()
+    }
+  }
   render(){
+          console.log(this.state.player_lists)
     return(
       <div>
         <p>{this.state.randnum}</p>
@@ -37,16 +55,18 @@ class Auth extends React.Component{
         <p>{`${this.state.player_lists[0].name}/${this.state.player_lists[0].position_number}`}</p>
         <form onSubmit={this.playerNameSubmit}>
           <pre><input type ="text" id="playername" name="playername" placeholder="君の名前を教えて"/></pre>
-          <input type="submit" value="決定" />
+          <input type="submit" value="決定"/>
         </form>
         <p>人数を教えてね</p>
-        <input list="playersize"/>
-          <datalist id="playersize">
-            <option value="1人"></option>
-            <option value="2人"></option>
-            <option value="3人"></option>
-            <option value="4人"></option>
-          </datalist>
+        <form onSubmit={this.playerCount}>
+          <select id="playerCount">
+            <option value="1">1人</option>
+            <option value="2">2人</option>
+            <option value="3">3人</option>
+            <option value="4">4人</option>
+          </select>
+          <input type="submit" value="決定"/>
+        </form>
       </div>
     )
   }
